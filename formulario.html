@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="refresh" content="submit; URL='obrigado.html'"/>
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Welcome!</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="titulo">Pokémon test</h1>
+            <p id="subtitulo">Preencha os campos abaixo</p>
+            <br>
+        </div>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Nickname de treinador</strong></label>
+                    <input type="text" name="Nickname" id="Nickname" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label><strong>Entre as opções, escolha onde está sua geração favorita.</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="one-options" checked>1-2-3° geração
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="two-options">4-5-6º geração
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="three-options">7-8º geração
+                </label>
+            </div>
+            <div class="campo">
+                <label for="tempo"><strong>A quanto tempo conhece a franquia?</strong></label>
+                <select id="tempo" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Menos de 5 anos</option>
+                  <option>5 á 10 anos</option>
+                  <option>Mais de 10 anos</option>
+                </select>
+            </div>
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Qual tipo você mais gosta?</strong></label><br><br>
+                    <input type="checkbox" id="t1" name="t1" value="fire">
+                    <label for="t1"> Fogo</label>
+                    <input type="checkbox" id="t2" name="t2" value="water">
+                    <label for="t2"> Água</label>
+                    <input type="checkbox" id="t3" name="t3" value="grass">
+                    <label for="t3"> Grama</label>
+                    <input type="checkbox" id="t4" name="t4" value="ghost">
+                    <label for="t4"> Fantasma</label>
+                    <input type="checkbox" id="t5" name="t5" value="dragon">
+                    <label for="t5"> Dragão</label>
+                    <input type="checkbox" id="t6" name="t6" value="outro">
+                    <label for="6"> Outro</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte aqui a sua experiência com a franquia: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+        </form>
+    </body>
+</html>
