@@ -1,0 +1,23 @@
+.card{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 7px 7px 13px 0 green;
+    color: white;
+    background-color: greenyellow;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 13px 13px 18px 0 green;
+}
+body{
+    background-color: black;
+    color: greenyellow;
+}
+*{
+    font-size: x-large;
+}
